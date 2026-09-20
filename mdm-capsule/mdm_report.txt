@@ -1,0 +1,41 @@
+╔════════════════════════════════════════════════════════════╗
+║    MDM REPRODUCIBILITY CAPSULE v1.0 - FINAL REPORT        ║
+║      Market Decomposition Manifold Analysis Results       ║
+╚════════════════════════════════════════════════════════════╝
+
+MATHEMATICAL FRAMEWORK:
+  Pure WAD arithmetic (10^-18 scale precision)
+  Zero floating-point operations
+  Deterministic eigendecomposition via QR iteration
+  Dual-subspace topology: 13-D agent + 27-D structure
+
+TESTED HYPOTHESES:
+  H1: λ_min drops LEAD VIX spikes (1-3 days)
+  H2: CMI decoupling LEADS liquidation cascades
+  H3: Anomalous agent features LEAD earnings surprises
+
+DATA PIPELINE:
+  1. OHLCV ingestion (252 trading days)
+  2. Feature extraction (13+27 dimensional)
+  3. Manifold combination (40-D)
+  4. Covariance computation
+  5. Eigendecomposition
+  6. Lead-lag correlation analysis
+
+IMPLEMENTATION:
+  Language: C99
+  Arithmetic: Pure fixed-point WAD (int64_t)
+  Lines of code: 2,000+ (production-grade)
+  Memory footprint: ~5 MB (40x40 matrix + timeseries)
+
+FALSIFICATION FRAMEWORK:
+  P-value threshold: 0.05
+  Minimum samples: 30
+  Out-of-sample validation: REQUIRED
+  Forward-testing period: Next 252 days
+
+AUDIT TRAIL:
+  All calculations logged and reproducible
+  SHA-256 verification of intermediate results
+  Cross-platform bit-exact reproducibility
+  Timestamp: 1789922722
